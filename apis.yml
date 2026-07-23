@@ -1,25 +1,66 @@
 aid: appionics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/appionics.png
 name: Appionics
-description: Appionics is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Appionics Holdings Limited is a Hong Kong mobile applications and games company that
+  operated under the consumer brand name "Animoca". Co-founded by Yat Siu and David Kim, and emerging
+  out of the Outblaze group, Appionics developed and published cross-platform games and apps for iOS
+  and Android, claiming more than 150 titles and over 40 million downloads during 2011. In 2014 the
+  company spun off part of its app portfolio, along with a set of licensed intellectual-property game
+  rights, into Animoca Brands Corporation Limited (ASX AB1), which listed on the Australian Securities
+  Exchange in January 2015 and later pivoted to blockchain gaming and NFTs. Appionics itself never
+  published a developer program, and today has no live web or API surface of its own.
 url: https://raw.githubusercontent.com/api-evangelist/appionics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Mobile
+- Mobile Games
+- Games
+- Apps
+- Publishing
+- Hong Kong
+x-enrichment-note: 'Enrichment 2026-07-19 (round 2): re-verified — Appionics has no live web or API
+  surface. appionics.eu is NXDOMAIN; appionics.com and appionics.net both resolve to the same parking
+  IPs (3.33.130.190 / 15.197.148.33) and return HTTP 200 serving only a redirect stub to /lander, i.e.
+  a parked/for-sale domain with no content. No GitHub org (github.com/appionics HTTP 404), no npm
+  packages (registry search total 0), no PyPI package (pypi.org/pypi/appionics/json HTTP 404), no
+  developer portal, OpenAPI, or SDKs. No artifacts could be produced without fabrication, so none
+  were. IDENTITY CORRECTION to the 2026-07-18 note: that round removed a Website pointer to
+  animocabrands.com and recorded Animoca Brands as "an unrelated company" — that is not accurate.
+  Animoca Brands Corporation Limited (ASX AB1) was spun out of Appionics Holdings Limited in 2014,
+  and "Animoca" was Appionics own consumer brand name. Removing the pointer was still the right call
+  (Animoca Brands is a separate, currently-listed company and animocabrands.com is not Appionics own
+  site), but the corporate relationship is genuine and is recorded here so a future round does not
+  re-flag it as a harvesting error. Sources: Crunchbase (Appionics Holdings Limited), Wikipedia
+  (Animoca Brands), outblaze.com/animoca-brands, gamesauce.biz/tag/appionics.'
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: https://animocabrands.com
+common: []
+x-enrichment:
+  date: '2026-07-19'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
